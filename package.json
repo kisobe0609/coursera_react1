@@ -1,0 +1,19 @@
+{
+  "name": "coursera_react1",
+  "version": "1.0.0",
+  "description": "This is practice for react.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kisobe0609/coursera_react1.git"
+  },
+  "author": "Kotaro Isobe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kisobe0609/coursera_react1/issues"
+  },
+  "homepage": "https://github.com/kisobe0609/coursera_react1#readme"
+}
