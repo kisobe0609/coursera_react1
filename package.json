@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kisobe0609/coursera_react1/issues"
   },
-  "homepage": "https://github.com/kisobe0609/coursera_react1#readme"
+  "homepage": "https://github.com/kisobe0609/coursera_react1#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
