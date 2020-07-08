@@ -7,7 +7,7 @@ class Menu extends Component {
         this.state = {
             selectedDish: null
         };
-        console.log('constructor is invoked')
+        // console.log('constructor is invoked');
     }
 
     onDishSelect(dish) {
