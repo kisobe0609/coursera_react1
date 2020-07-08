@@ -23,16 +23,15 @@ class DishDetail extends Component {
             );
         }
     }
-    showComment(dish) {
+    renderComment(dish) {
         if (dish != null) {
             const comment = this.props.selectedDish.comments.map((comment) => {
                 var date = new Date(comment.date);
-                const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                 return (
                 <div>
                     <p>Rating: {comment.rating}</p>
-                    <p>Comment: {comment.comment}</p>
-                    <p>--{comment.author}, { months[date.getMonth()] } { date.getDate() }, { date.getFullYear() } </p>
+                    <p>{comment.comment}</p>
+                    <p>--{comment.author}, { date.toLocaleString('en', {month:'short'}) } { date.getDate() }, { date.getFullYear() } </p>
                     <hr />
                 </div>
                 );
@@ -53,7 +52,7 @@ class DishDetail extends Component {
                     {this.renderDish(this.props.selectedDish)}
                 </div>
                 <div className="col-12 col-md-5 m-1">
-                    {this.showComment(this.props.selectedDish)}
+                    {this.renderComment(this.props.selectedDish)}
                 </div>
             </div>
         );
