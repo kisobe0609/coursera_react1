@@ -26,17 +26,17 @@ class DishDetail extends Component {
     showComment(dish) {
         if (dish != null) {
             const comment = this.props.selectedDish.comments.map((comment) => {
+                var date = new Date(comment.date);
+                const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                 return (
                 <div>
-                    <p>Author: {comment.author}</p>
                     <p>Rating: {comment.rating}</p>
                     <p>Comment: {comment.comment}</p>
-                    <p>Date: {comment.date}</p>
+                    <p>--{comment.author}, { months[date.getMonth()] } { date.getDate() }, { date.getFullYear() } </p>
                     <hr />
                 </div>
                 );
-            }
-            );
+            });
             return(
                 <div>
                 <h4>Comments on {dish.name}</h4>
